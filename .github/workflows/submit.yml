@@ -1,9 +1,9 @@
-name: 自动运行
+name: auto-report
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 17,22 * * *" # 每天运行 1:00 A.M., 6:00 A.M. 两次 (UTC+8)
+    - cron: "10 09 * * *" # 每天运行一次 09:10
 
 jobs:
   build:
